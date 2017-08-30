@@ -1500,6 +1500,8 @@ MOBILE FIRST BABY
     margin-top: 5%; }
   .supported-devices {
     width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
     margin-top: 7%; }
     .supported-devices .services-title {
       text-align: left;
@@ -1520,7 +1522,8 @@ MOBILE FIRST BABY
       font-size: calc(130% + 1vw);
       font-weight: 700; }
   .cellphone-purchase {
-    max-width: 1920px; }
+    max-width: 1500px;
+    margin: 0 auto; }
   .phone-purchase {
     height: 100%; }
     .phone-purchase .money {
