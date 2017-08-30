@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }, 1000);
 
     console.log("Loader-removed!!");
-})
+});
 
 
 var menu = {
@@ -39,7 +39,7 @@ var contactCard = {
     },
 
     hideContactCard: function() {
-        this.element.style.transform = "translate3d(0px, -200%, 0px)"
+        this.element.style.transform = "translate3d(0px, -200%, 0px)";
     }
 };
 
@@ -65,19 +65,32 @@ menu.text.addEventListener('click', function (e) {
 });
 
 var itemRow = document.querySelectorAll('.service-item');
+var elem = document.querySelector(".midway-banner");
+var image = document.querySelector(".iPhone-doctor");
 
-var lazyloadServices = {
-    itemRowArray: [''],
 
-    log: function() {
-        console.log(lazyloadServices.itemRow.length);
-    },
 
-    load: function() {
-        for (i = 0; i <= element.length; i++) {
-            console.log(element[i].classList);
-        }
+
+function parallaxScroll() {
+
+    var scrollHeight = window.pageYOffset;
+    var elemBox = elem.getBoundingClientRect();
+    var lag = document.querySelector('.iPhone-doctor').getAttribute("data-lag");
+    var elemHeight = image.getBoundingClientRect();
+
+
+    if(elemBox.top >= window.innerHeight || elemBox.bottom <= 0) {
+        image.removeAttribute("style");
+
     }
-    
-};
+        else {
+            //console.log(elemBox.height, window.innerHeight, window.innerWidth, scrollHeight, elemBox);
+            image.style.transform = "translate3d(0px, " + Math.round(elemBox.top / -(lag)) + "px, 0px)";
+            
+        }
+
+}
+document.addEventListener("scroll", function() {
+    window.requestAnimationFrame(parallaxScroll);
+});
 
