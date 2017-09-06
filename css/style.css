@@ -1171,36 +1171,16 @@ main {
       font-size: calc(85% + 0.7vw); }
 
 .midway-banner {
-  width: 100%;
-  max-width: 1920px;
-  margin-top: 12%;
-  height: 600px;
-  position: relative;
-  overflow: hidden; }
-  .midway-banner svg {
-    position: relative;
-    width: 15%;
-    max-width: 400px;
-    display: block;
-    margin: 30px auto; }
-  .midway-banner .iPhone-doctor {
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    will-change: transform; }
-  .midway-banner h1 {
-    position: relative;
-    color: #262626;
-    text-align: center; }
-  .midway-banner h4 {
-    position: relative;
-    font-size: 18px;
-    color: #282828;
-    font-weight: 400;
-    max-width: 700px;
-    margin: 0 auto; }
+  display: none; }
+  @media (min-width: 1250px) {
+    .midway-banner {
+      display: block;
+      width: 100%;
+      max-width: 1920px;
+      margin-top: 12%;
+      height: 600px;
+      position: relative;
+      overflow: hidden; } }
 
 .phone-software-services {
   margin-top: 10%; }
@@ -1506,12 +1486,30 @@ MOBILE FIRST BABY
     margin-top: 5%; }
   .supported-devices {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
-    margin-top: 7%; }
+    margin-top: 7%;
+    padding-left: 4%; } }
+  @media (min-width: 700px) and (min-width: 1400px) {
+    .supported-devices {
+      padding-left: 0%; } }
+
+@media (min-width: 700px) {
     .supported-devices .services-title {
-      text-align: left;
-      padding: 0 0 0 7%; }
+      text-align: left; }
+  .sell-devices {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto 3%;
+    padding-left: 4%; } }
+  @media (min-width: 700px) and (min-width: 1400px) {
+    .sell-devices {
+      padding-left: 0%; } }
+
+@media (min-width: 700px) {
+    .sell-devices .services-title {
+      padding-top: 0;
+      text-align: left; }
   .cellphone-providers {
     max-width: 1920px;
     margin: 4% auto 0; }
