@@ -1177,6 +1177,12 @@ main {
   height: 600px;
   position: relative;
   overflow: hidden; }
+  .midway-banner svg {
+    position: relative;
+    width: 15%;
+    max-width: 400px;
+    display: block;
+    margin: 30px auto; }
   .midway-banner .iPhone-doctor {
     width: 100%;
     display: block;
