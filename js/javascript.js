@@ -69,12 +69,7 @@ var elem = document.querySelector(".midway-banner");
 var image = document.querySelector(".iPhone-doctor");
 
 
-
-
-
 function parallaxScroll() {
-
-    
 
     var scrollHeight = window.pageYOffset;
     var elemBox = elem.getBoundingClientRect();
@@ -102,4 +97,3 @@ if (document.querySelector('.iPhone-doctor')) {
 }
 
 else { console.log("no parallax here suckers!!!");}
-
