@@ -71,7 +71,10 @@ var image = document.querySelector(".iPhone-doctor");
 
 
 
+
 function parallaxScroll() {
+
+    
 
     var scrollHeight = window.pageYOffset;
     var elemBox = elem.getBoundingClientRect();
@@ -90,7 +93,13 @@ function parallaxScroll() {
         }
 
 }
-document.addEventListener("scroll", function() {
-    window.requestAnimationFrame(parallaxScroll);
-});
+
+
+if (document.querySelector('.iPhone-doctor')) {
+    document.addEventListener("scroll", function(){
+        window.requestAnimationFrame(parallaxScroll);
+    });
+}
+
+else { console.log("no parallax here suckers!!!");}
 

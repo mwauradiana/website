@@ -827,8 +827,8 @@ main {
   height: 100%; }
 
 .software-services {
-  background-image: url("../images/software-services-background1x.jpg");
-  background-image: -webkit-image-set(url("../images/software-services-background1x.jpg") 1x, url("../images/software-services-background2X.jpg") 2x);
+  background-image: url("../images/software-services1X.jpg");
+  background-image: -webkit-image-set(url("../images/software-services1X.jpg") 1x, url("../images/software-services2X.jpg") 2x);
   background-size: cover;
   background-position: center;
   height: 100%; }
