@@ -5,6 +5,7 @@ var combineMq   = require('gulp-combine-mq');
 var autoprefixer = require('gulp-autoprefixer');
 var CSS         = require('gulp-clean-css');
 var sourceMaps = require('gulp-sourcemaps');
+var pug = require('gulp-pug');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
@@ -20,6 +21,12 @@ gulp.task('sass', function() {
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest("css"))
         .pipe(browserSync.stream());
+});
+
+gulp.task('buildHTML', function() {
+    gulp.src('template/*.pug')
+    .pipe(pug())
+    .pipe(gulp.dest('./'));
 });
 
 

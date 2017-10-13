@@ -1168,7 +1168,7 @@ main {
       margin-top: 6%;
       padding: 0 7%;
       font-weight: 400;
-      font-size: calc(85% + 0.7vw); }
+      font-size: 16px; }
 
 .midway-banner {
   display: none; }
@@ -1470,7 +1470,8 @@ MOBILE FIRST BABY
         font-size: calc(100% + 1.5vw); }
       .services-grid .service-item p {
         margin-top: 10%;
-        font-size: calc(90% + 0.5vw); }
+        font-size: calc(90% + 0.5vw);
+        line-height: 1.2; }
   .services-title {
     width: 100%;
     text-align: center; }
